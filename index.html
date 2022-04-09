@@ -1,0 +1,75 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<!--final html-->
+    <!-- title -->
+    <title>Card War Game</title>
+
+    <!-- js -->
+    <script src="card.js"></script> 
+
+    <!-- css -->
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+<div class="header">♥ ♠ ♣ ♦ Card War Game ♠ ♣ ♦ ♥</div>
+<div class="players">
+    <div>
+
+    </div>
+
+    <div class="centercard">
+        <div class="playertitle">Player-1</div>
+        <div class="score" id="player1score">26</div>
+
+        <div class="card">
+            <div class="topcard"><br>
+                <label class="cardnum" id="player1cardnum"><img src="img.jpg" alt=""></label>
+                <label class="char" id="player1char"></label>
+            </div>
+            <div class="middlecard">
+                <label id="player1bigchar" class="bigchar"></label>
+            </div>
+            <div class="bottomcard"><br>
+                <label class="cardnum" id="player1cardnum1"></label>
+                <label class="char" id="player1char1"></label>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="winpointer">
+        <label id="win-p">win</label>
+        <div class="pointer" id="pointer"></div>
+    </div>
+
+    <div class="centercard">
+        <div class="playertitle">Player-2</div>
+        <div class="score" id="player2score">26</div>
+
+        <div class="card">
+            <div class="topcard"><br>
+                <label class="cardnum" id="player2cardnum"><img src="img.jpg" alt=""></label>
+                <label class="char" id="player2char"></label>
+            </div>
+            <div class="middlecard">
+                <label id="player2bigchar" class="bigchar"></label>
+            </div>
+            <div class="bottomcard"><br>
+                <label class="cardnum" id="player2cardnum1"></label>
+                <label class="char" id="player2char1"></label>
+            </div>
+        </div>
+
+    </div>
+   
+  </div>
+</div>
+
+<br><br><br>
+<input type="button" value="Next Turn" id="mainbtn" onclick="Deck();">
+<div class="resetbtn"><a id="resetbtn" onclick="location.reload();">↺</a></div>
+
+
+</body>
+</html>
